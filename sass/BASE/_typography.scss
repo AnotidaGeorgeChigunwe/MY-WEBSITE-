@@ -1,0 +1,32 @@
+
+
+// body typograph is in header
+//Primary - header 
+
+.HONE {  
+
+    margin-bottom: .2rem;
+
+    &--A {
+        display: block;
+        font-size: 3rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration-style: double;
+        animation: moveinfromright 2s, ease-in-out
+    }
+
+    &--B {
+        display: block;
+        font-size: 2rem;
+        font-weight: 400;
+        letter-spacing: .5rem;
+        font-family: 'Times New Roman', Times, serif;
+        text-decoration-style: double;
+        animation: popinwife .5s  ease-in-out 2.2s;
+        animation-fill-mode: backwards;    
+        }
+
+
+}

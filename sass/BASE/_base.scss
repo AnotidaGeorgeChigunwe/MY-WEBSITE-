@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+html {
+    // difines what one px is 
+    font-size : 62.5%;
+   }
+   
+body {
+    // some of this is typography 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    line-height: 1.8;
+    color: $color-white;
+    padding: 2.5rem;
+
+    box-sizing: border-box;
+}

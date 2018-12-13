@@ -1,176 +1,137 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 1.8;
-    color: rgb(253, 253, 253);
-    padding: 25px;
-}
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.8;
+  color: floralwhite;
+  padding: 2.5rem;
+  box-sizing: border-box; }
 
-.header { 
-    height: 97vh;
-    shape-image-threshold: 0,5;
-    background-image: linear-gradient(to bottom right, rgba(6, 110, 93, 0.822),rgba(58, 164, 226, 0.801)),url(IMAGES/1.jpg);
-    background-size: cover;
-    background-position: top;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 70% 85%,60% 100%, 0% 100%);
-    position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.harshtag {
-
-   position: absolute;
-   top: 20px;
-   left: 140px;
-   border: 3px;
-   border-color: black;
-   background-color: rgba(6, 90, 76, 0.822);
-   padding: 5px;
-   font-family: monospace;
-}
-
-.header-box {
+.header {
+  height: 97vh;
+  shape-image-threshold: 0,5;
+  background-image: linear-gradient(to bottom right, rgba(6, 110, 93, 0.822), rgba(58, 164, 226, 0.801)), url(IMAGES/1.jpg);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 70% 85%, 60% 100%, 0% 100%);
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  /* love what we do wecode */ }
+  .header__harshtag {
     position: absolute;
-top: 25%;
-left: 40%;
-transform: translate(-50%,-50%)
+    top: 2rem;
+    left: 14rem;
+    border: .3rem;
+    border-color: #000000;
+    background-color: rgba(6, 90, 76, 0.822);
+    padding: .5rem;
+    font-family: monospace; }
+  .header__header-box {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    transform: translate(-50%, -50%); }
 
-}
-.HONE {  
-
-margin-bottom: 20px;
-}
-
-.HONEA {
+.HONE {
+  margin-bottom: .2rem; }
+  .HONE--A {
     display: block;
-    font-size: 40px;
+    font-size: 3rem;
     font-weight: 400;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     font-family: 'Times New Roman', Times, serif;
     text-decoration-style: double;
-    animation: moveinfromright 2s, ease-in-out
-
-}
-
-.HONEB {
+    animation: moveinfromright 2s, ease-in-out; }
+  .HONE--B {
     display: block;
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: 400;
-    letter-spacing: 5px;
+    letter-spacing: .5rem;
     font-family: 'Times New Roman', Times, serif;
     text-decoration-style: double;
     animation: popinwife .5s  ease-in-out 2.2s;
-    animation-fill-mode: backwards;
-    
-}
+    animation-fill-mode: backwards; }
 
 @keyframes moveinfromright {
-   0%{
-        opacity: 0;
-        transform: translateX(-200px)
-        }
-
-   100%{
-        opacity: 1;
-        transform: translateX(0)
-   }
-
-}
-
+  0% {
+    opacity: 0;
+    transform: translateX(-20rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
 
 @keyframes popinwife {
-    0%{
-         opacity: 0;
-         transform: translateY(20px); 
-     }
-   
-  100%{
-         opacity: 1;
-         transform: translateY(0)
+  0% {
+    opacity: 0;
+    transform: translateY(2rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
-     }
-}
-
-.button:link,
-.button:visited {
-     text-transform: uppercase;
-     text-decoration: none;
-     font-family: Arial, Helvetica, sans-serif;
-     display: inline-block;
-     transition: all .3s;              
-}
+.button:link, .button:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  transition: all .3s;
+  font-size: 17px; }
 
 .button:hover {
-    transform: translateY(-5px);
-    box-shadow: 10px 10px rgb(0,0,0,.2)
-}
+  transform: translateY(-0.5rem);
+  box-shadow: 1rem 1rem rgba(0, 0, 0, 0.171); }
+
+.buttonhover::after {
+  transform: scale(1, 1.7);
+  opacity: 0;
+  animation: fedoutbuttonshadow .4s; }
 
 .button:active {
-    transform: translateY(-2px);
-    box-shadow: 5px 5px rgb(0,0,0,.1)
-}
+  transform: translateY(-0.2rem);
+  box-shadow: 0.5rem 0.5rem rgba(0, 0, 0, 0.096); }
 
 .button-white {
-    background-color:floralwhite;
-    padding: 10px;
-    color: rgb(6, 90, 76);
-    border-radius: 5px;
-    position: relative;
-    animation: Buttonin .5s ease-out 3s;
-    animation-fill-mode: backwards;
-    
-}
+  background-color: floralwhite;
+  padding: 1rem;
+  color: #066E5D;
+  border-radius: .5rem;
+  position: relative;
+  animation: Buttonin .5s ease-out 3s;
+  animation-fill-mode: backwards; }
+  .button-white::after {
+    background-color: floralwhite; }
+
 .button::after {
-    content: "";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 5px; 
-    position: absolute;
-    top: 0;
-    left: 0;
-   z-index: -1;
-    transition: all .3;
-
-    
-}
-
-.button-white::after{
-    background-color: floralwhite;
-
-}
-
-.button:hover::after{
-     transform: scale(1, 1.7);
-     opacity: 0;
-     animation: fedoutbuttonshadow .4s;    
-}
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: .5rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all .3; }
 
 @keyframes fedoutbuttonshadow {
-    0%{
-         opacity: 1;
-         transform: scale(1,1)
-         }
- 
-    100%{
-         opacity: 0;
-         transform: scale(1,1.75)
-    }
- 
- }
+  0% {
+    opacity: 1;
+    transform: scale(1, 1); }
+  100% {
+    opacity: 0;
+    transform: scale(1, 1.75); } }
 
- @keyframes Buttonin {
-    0%{
-         opacity: 0;
-         transform: translateY(10px)
-         }
- 
-    100%{
-         opacity: 1;
-         transform: translateY(0)
-    }
- 
- }
-
+@keyframes Buttonin {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
